@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        h1 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 3px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        #yesBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #yesBtn:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        #noBtn {
+            background-color: #f44336;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<h1>Do you love me?</h1>
+
+<div class="buttons">
+    <button id="yesBtn" onclick="clickYes()">YES</button>
+    <button id="noBtn" onmouseover="diChuyenNutNo()">NO</button>
+</div>
+
+<script>
+    function clickYes() {
+        alert("<3");
+    }
+
+    function diChuyenNutNo() {
+        var nutNo = document.getElementById('noBtn');
+
+        var viTriX = Math.random() * (window.innerWidth - 150);
+        var viTriY = Math.random() * (window.innerHeight - 80);
+
+        nutNo.style.position = 'fixed';
+        nutNo.style.left = viTriX + 'px';
+        nutNo.style.top = viTriY + 'px';
+    }
+</script>
+</body>
+</html>
