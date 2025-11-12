@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cân nặng</title>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng của cơ thể</h1>
+<!--// BMI = weight / (height ^ 2)-->
+Nhập cân nặng:
+<input type="number" id="weight" step="0.1"><br>
+Nhập chiều cao:
+<input type="number" id="height" step="0.01"><br>
+<button type="button" onclick="bmiScore()">tính bmi</button>
+<h2>kết quả</h2>
+<p id="result">chỉ số bmi:</p>
+<script>
+    // let weightInput = document.getElementById('weight');
+    // let heightInput = document.getElementById('height');
+    // let bmi = document.getElementById('weight / height*height');
+    // let result = document.getElementById('result');
+    function bmiScore() {
+        var weight = parseFloat(document.getElementById('weight').value);
+        var height = parseFloat(document.getElementById('height').value);
+        var bmi = weight / (height * height);
+        var phanLoai = "";
+
+        if (bmi < 18.5) {
+            phanLoai = "Underweight (Thiếu cân)";
+        } else if (bmi >= 18.5 && bmi < 25.0) {
+            phanLoai = "Normal (Bình thường)";
+        } else if (bmi >= 25.0 && bmi < 30.0) {
+            phanLoai = "Overweight (Thừa cân)";
+        } else {
+            phanLoai = "Obese (Béo phì)";
+        }
+        document.getElementById('result').innerHTML =
+            "Cân nặng: " + weight + " kg<br>" +
+            "Chiều cao: " + height + " m<br>" +
+            "BMI = " + weight + " / (" + height + "²) = " + bmi.toFixed(2) + "<br>" +
+            "Phân loại: <strong>" + phanLoai + "</strong>";
+    }
+</script>
+</body>
+</html>

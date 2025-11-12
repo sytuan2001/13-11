@@ -36,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.bmi.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.nobita.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -70,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762914623964</updated>
-      <workItem from="1762914625013" duration="1748000" />
+      <workItem from="1762914625013" duration="5297000" />
     </task>
     <servers />
   </component>
