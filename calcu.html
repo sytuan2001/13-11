@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="display" value="0" readonly>
+    <div class="buttons">
+        <button onclick="nhanNut('1')">1</button>
+        <button onclick="nhanNut('2')">2</button>
+        <button onclick="nhanNut('3')">3</button>
+        <button onclick="nhanNut('+')">+</button>
+
+        <button onclick="nhanNut('4')">4</button>
+        <button onclick="nhanNut('5')">5</button>
+        <button onclick="nhanNut('6')">6</button>
+        <button onclick="nhanNut('-')">-</button>
+
+        <button onclick="nhanNut('7')">7</button>
+        <button onclick="nhanNut('8')">8</button>
+        <button onclick="nhanNut('9')">9</button>
+        <button onclick="nhanNut('*')">x</button>
+
+        <button onclick="xoaManHinh()">C</button>
+        <button onclick="nhanNut('0')">0</button>
+        <button onclick="tinhToan()">=</button>
+        <button onclick="nhanNut('/')">/</button>
+    </div>
+</div>
+
+<script src="calcu.js"></script>
+
+</body>
+</html>
