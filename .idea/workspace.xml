@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="474186bc-13d3-44c2-ba8b-6f8ead07f00a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,7 @@
     "JavaScript Debug.bmi.html.executor": "Run",
     "JavaScript Debug.calcu.html.executor": "Run",
     "JavaScript Debug.date.html.executor": "Run",
+    "JavaScript Debug.haha.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.nobita.html.executor": "Run",
     "JavaScript Debug.test.html.executor": "Run",
@@ -78,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762914623964</updated>
-      <workItem from="1762914625013" duration="13251000" />
+      <workItem from="1762914625013" duration="15114000" />
     </task>
     <servers />
   </component>
