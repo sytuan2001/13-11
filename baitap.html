@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // bài 1: Nhập hai số a và b, kiểm tra xem a có chia hết cho b hay không.
+    let a = prompt('Nhập a');
+    let b = prompt('Nhập b');
+
+    a = Number(a);
+    b = Number(b);
+
+    if (b === 0) {
+        alert('không thể chia cho 0');
+    } else if (a % b === 0) {
+        alert('a chia hết cho b');
+    } else {
+        alert('a không chia hết cho b')
+    }
+    // bài 2: Nhập tuổi, kiểm tra và in kết quả xem học sinh có đủ điều kiện vào học lớp 10 hay không.
+    let tuoiHocSinh = prompt('Nhập tuổi:');
+
+    if (tuoiHocSinh < 16) {
+        alert('Học sinh này chưa đủ tuổi vào học lớp 10');
+    } else {
+        alert('Học sinh này đủ tuổi');
+    }
+    //bài 3:Nhập một số nguyên bất kỳ, in ra kết quả để xác định số đó lớn hơn, nhỏ hơn hay bằng 0.
+    let n = Number(prompt('Nhập một số nguyên'));
+    if (n>0) {
+        alert('số này lớn hơn 0');
+    } else if (n===0) {
+        alert('số này = 0');
+    } else {
+        alert('số này bé hơn 0')
+    }
+     //bài 4: Nhập 3 số nguyên, tìm và in ra giá trị lớn nhất trong ba số đó.
+    let a = Number(prompt('Nhập a'));
+    let b = Number(prompt('Nhập b'));
+    let c = Number(prompt('Nhập c'));
+    let max;
+    if (a >= b && a >= c) {
+        max = a;
+    } else if (b >= a && b >= c) {
+        max = b;
+    } else {
+        max = c;
+    }
+
+    alert('Số lớn nhất là: ' + max);
+    // bài 5:
+    let diemBaiKiemTra = Number(prompt('Nhập điểm bài kiểm tra:'));
+    let diemGiuaKy = Number(prompt('Nhập điểm giữa kỳ:'));
+    let diemCuoiKy = Number(prompt('Nhập điểm cuối kỳ:'));
+
+    let diemTrungBinh = (diemBaiKiemTra + diemGiuaKy + diemCuoiKy) / 3;
+    let hocLuc;
+
+    if (diemTrungBinh >= 8) {
+        hocLuc = 'Giỏi';
+    } else if (diemTrungBinh >= 6.5) {
+        hocLuc = 'Khá';
+    } else if (diemTrungBinh >= 5) {
+        hocLuc = 'Trung bình';
+    } else {
+        hocLuc = 'Yếu';
+    }
+
+    alert('Điểm trung bình: ' + diemTrungBinh.toFixed(2) + '\nHọc lực: ' + hocLuc);
+    // bài 6: Tính hoa hồng nhận được dựa trên mức doanh số bán hàng.
+    let doanhSo = Number(prompt('Nhập doanh số bán hàng:'));
+    let hoaHong;
+
+    if (doanhSo < 10000000) {
+        hoaHong = doanhSo * 0.05;
+    } else if (doanhSo <= 50000000) {
+        hoaHong = doanhSo * 0.10;
+    } else {
+        hoaHong = doanhSo * 0.15;
+    }
+
+    alert('Hoa hồng nhận được: ' + hoaHong.toLocaleString('vi-VN') + ' VNĐ');
+    // bài 7:Tính cước điện thoại cho một hộ gia đình dựa trên các thông số được cung cấp.
+    let soPhutGoi = Number(prompt('Nhập số phút gọi trong tháng:'));
+    let cuoc = 50000; // cước cố định
+
+    if (soPhutGoi <= 100) {
+        cuoc += soPhutGoi * 1000;
+    } else {
+        cuoc += 100 * 1000 + (soPhutGoi - 100) * 1500;
+    }
+
+    alert('Tổng cước điện thoại: ' + cuoc.toLocaleString('vi-VN') + ' VNĐ');
+
+
+
+
+
+
+</script>
+</body>
+</html>

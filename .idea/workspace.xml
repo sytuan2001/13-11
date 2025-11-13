@@ -38,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.baitap.html.executor": "Run",
     "JavaScript Debug.bmi.html.executor": "Run",
     "JavaScript Debug.calcu.html.executor": "Run",
     "JavaScript Debug.date.html.executor": "Run",
@@ -78,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762914623964</updated>
-      <workItem from="1762914625013" duration="15114000" />
+      <workItem from="1762914625013" duration="22538000" />
     </task>
     <servers />
   </component>
