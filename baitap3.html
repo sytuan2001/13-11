@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 1
+    let doC = Number(prompt('Nhập độ C:'));
+    let doF = doC*9/5 + 32;
+    alert('Nhiệt độ của độ F là:' + doF.toFixed(2));
+    // bài 2
+    let m = Number(prompt('Nhập số met'));
+    let f = m*3.2808;
+    alert('số feet là:'+ f.toFixed(2));
+    // bài 3
+    let a = Number(prompt('Nhập cạnh a của hình vuông:'));
+    let dienTich = a * a;
+    alert('Diện tích hình vuông là: ' + dienTich);
+    // bài 4
+    let a = Number(prompt('Nhập chiều dài a:'));
+    let b = Number(prompt('Nhập chiều rộng b:'));
+    let dienTich = a * b;
+    alert('Diện tích hình chữ nhật là: ' + dienTich);
+    // bài 5
+    let a = Number(prompt('Nhập cạnh kề a:'));
+    let b = Number(prompt('Nhập cạnh kề b:'));
+    let dienTich = (a * b) / 2;
+    alert('Diện tích tam giác vuông là: ' + dienTich);
+    // bài 6
+    let a = Number(prompt('Nhập a:'));
+    let b = Number(prompt('Nhập b:'));
+    let x;
+
+    if (a === 0) {
+        if (b === 0) {
+            alert('Vô số nghiệm');
+        } else {
+            alert('Vô nghiệm');
+        }
+    } else {
+        x = -b / a;
+        alert('Nghiệm x = ' + x);
+    }
+    // bài 7
+    let a = Number(prompt('Nhập a:'));
+    let b = Number(prompt('Nhập b:'));
+    let c = Number(prompt('Nhập c:'));
+
+    if (a === 0) {
+        // phương trình bậc 1
+        if (b === 0) {
+            if (c === 0) {
+                alert('Vô số nghiệm');
+            } else {
+                alert('Vô nghiệm');
+            }
+        } else {
+            let x = -c / b;
+            alert('Nghiệm x = ' + x);
+        }
+    } else {
+        let delta = b*b - 4*a*c;
+        if (delta < 0) {
+            alert('Vô nghiệm thực');
+        } else if (delta === 0) {
+            let x = -b / (2*a);
+            alert('Nghiệm kép x = ' + x);
+        } else {
+            let x1 = (-b + Math.sqrt(delta)) / (2*a);
+            let x2 = (-b - Math.sqrt(delta)) / (2*a);
+            alert('Hai nghiệm x1 = ' + x1 + ', x2 = ' + x2);
+        }
+    }
+    // bài 8
+    let so = Number(prompt('Nhập một số:'));
+
+    if (so > 0 && so < 120) {
+        alert('Đây là tuổi hợp lệ');
+    } else {
+        alert('Đây không phải là tuổi hợp lệ');
+    }
+    // bài 9
+    let a = Number(prompt('Nhập cạnh a:'));
+    let b = Number(prompt('Nhập cạnh b:'));
+    let c = Number(prompt('Nhập cạnh c:'));
+
+    if (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b) {
+        alert('Đây là 3 cạnh của một tam giác');
+    } else {
+        alert('Không phải 3 cạnh của một tam giác');
+    }
+    // bài 10
+    let soKw = Number(prompt('Nhập số kWh tiêu thụ:'));
+    let tienDien;
+
+    if (soKw <= 50) {
+        tienDien = soKw * 1500;
+    } else if (soKw <= 100) {
+        tienDien = 50 * 1500 + (soKw - 50) * 2000;
+    } else {
+        tienDien = 50 * 1500 + 50 * 2000 + (soKw - 100) * 2500;
+    }
+
+    alert('Tiền điện phải trả: ' + tienDien.toLocaleString('vi-VN') + ' VNĐ');
+    // bài 11
+    let thuNhap = Number(prompt('Nhập thu nhập cá nhân:'));
+    let thue;
+
+    if (thuNhap <= 5000000) {
+        thue = thuNhap * 0.05;
+    } else if (thuNhap <= 10000000) {
+        thue = 5000000 * 0.05 + (thuNhap - 5000000) * 0.10;
+    } else {
+        thue = 5000000 * 0.05 + 5000000 * 0.10 + (thuNhap - 10000000) * 0.15;
+    }
+
+    alert('Thuế thu nhập cá nhân phải nộp: ' + thue.toLocaleString('vi-VN') + ' VNĐ');
+    // bài 12
+    let tienBanDau = Number(prompt('Nhập số tiền ban đầu:'));
+    let laiSuat = Number(prompt('Nhập lãi suất hàng tháng (%):'));
+    let soThang = Number(prompt('Nhập số tháng gửi:'));
+
+    let tienCuoi = tienBanDau * Math.pow(1 + laiSuat/100, soThang);
+
+    alert('Số tiền cuối cùng sau ' + soThang + ' tháng là: ' + tienCuoi.toLocaleString('vi-VN') + ' VNĐ');
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
